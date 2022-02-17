@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: 0;
+}
+// Header content
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+span,
+button,
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  .header-content {
+    background: url(./assets/Background.png) no-repeat;
+    background-size: cover;
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 1.2rem;
+
+      #list-menu {
+        display: none;
+      }
+    }
+
+    .code-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        color: rgba(0, 0, 0, 0.623);
+        font-weight: 500;
+        width: 80%;
+      }
+
+      button {
+        background-color: black;
+        border-radius: 8px;
+        margin-top: 1rem;
+        width: 24rem;
+        height: 3.8rem;
+
+        a {
+          font-size: 1rem;
+          color: white;
+        }
+      }
+
+      span {
+        margin-top: 0.5rem;
+        color: rgba(0, 0, 0, 0.576);
+      }
+
+      img {
+        margin-top: 2rem;
+        width: 93%;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    img {
+      width: 95%;
+    }
+
+    h2,
+    p,
+    button {
+      margin: 1rem 0rem 0rem 1rem;
+    }
+
+    p {
+      width: 70%;
+    }
+
+    button {
+      background-color: black;
+      border-radius: 5px;
+      width: 15rem;
+      height: 3.8rem;
+
+      a {
+        font-size: 1rem;
+        color: white;
+      }
+    }
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    .terms {
+      display: flex;
+      p:not(:first-child) {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    .header-content {
+      .nav-content {
+        justify-content: space-around;
+        padding: 2rem 0rem;
+
+        #search,
+        a {
+          margin-right: 1rem;
+        }
+
+        #list-menu {
+          align-items: center;
+          display: flex;
+          text-align: center;
+
+          a {
+            color: black;
+          }
+
+          button {
+            background-color: black;
+            border-radius: 8px;
+            width: 14rem;
+            height: 3rem;
+
+            a {
+              font-size: 1rem;
+              color: white;
+              align-content: center;
+              align-items: center;
+            }
+          }
+        }
+
+        #burguer {
+          display: none;
+        }
+      }
+
+      .code-content {
+        button {
+          background-color: black;
+          border-radius: 8px;
+          margin-top: 1rem;
+          width: 15 rem;
+          height: 3.8rem;
+
+          a {
+            font-size: 1rem;
+            color: white;
+          }
+        }
+
+        img {
+          margin-top: 5rem;
+          width: 55%;
+          border-radius: 6px;
+        }
+      }
+    }
+    .main-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      img {
+        margin-left: 5rem;
+        margin-right: 2rem;
+        width: 35%;
+      }
+    }
+    .footer-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 7rem 8rem;
+      justify-content: space-between;
+    }
+  }
+}
