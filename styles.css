@@ -74,7 +74,7 @@ body .header-content .code-content button {
   background-color: black;
   border-radius: 8px;
   margin-top: 1rem;
-  width: 20rem;
+  width: 24rem;
   height: 3.8rem;
 }
 
@@ -150,6 +150,11 @@ body .footer-content .terms {
 
 body .footer-content .terms p:not(:first-child) {
   margin-left: 1rem;
+}
+
+body main,
+body footer {
+  background-color: white;
 }
 
 @media (min-width: 1200px) {
